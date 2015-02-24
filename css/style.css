@@ -1,0 +1,126 @@
+body{
+    background-color: #ECF0F1
+}
+
+a{
+    font-family: 'Lora', serif;
+    font-size:20px;
+    float:right;
+    padding:5px; 
+    text-decoration: none;
+    color: #36D7B7;
+    padding-right: 25px;
+}
+
+.aboutUs{
+    width: 400px;
+    background-color: white;
+    padding: 45px;
+    margin-left: 165px;
+    margin-top: 105px;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    color:#36D7B7;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    color:#36D7B7;
+}
+
+.aboutUs p{
+    font-family:'Myriad Pro', sans-serif;
+    font-size:20px;
+}
+
+table{
+    float:center;
+    padding-left: 206px;
+    padding-top: 55px;
+}
+th{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding:5px;
+    width:200px;
+    height:50px;
+    background-color:#7F8C8D;
+    color:#ECF0F1;
+}
+
+tbody{
+    font-family: 'Raleway', sans-serif;
+    color:#7F8C8D;
+    background-color: #ECF0F1
+}
+
+.login td{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px; 
+}
+
+.login {
+    float:center;
+    padding-left: 25px;
+    padding-top: 55px;
+}
+
+.login tbody{
+    background-color: #ECF0F1
+}
+
+.button1 {
+    border-radius: 6px;
+    background-color: #36D7B7;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    style:none;
+    border: none;
+}
+
+.input{
+   width: 327px;
+}
+
+.actions, .actionsView{
+   font-family: 'Raleway', sans-serif;
+   color:#7F8C8D;
+   font-weight:bold;
+   padding: 7px;
+}
+
+.actionsViewDiv{
+margin-right: 1460px;
+}
+
+.view{
+    padding: 12px;
+}
+
+.editTable{
+    font-family: 'Raleway', sans-serif;
+    background-color:#ECF0F1;
+    color:#7F8C8D;
+    padding-left: 50px;
+    padding-top: 0px;
+}
+
+.editTable td{
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+}
+
+.editTable input{
+    height:35px;
+    width: 300px;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color:#6C7A89;
+}
