@@ -54,6 +54,6 @@ $managers = $managerGateway->ManagerById();
                 ?>
             </tbody>
         </table>
-        <p><a href="createManagerForm.php">Create Manager</a></p>
+        <p><a href="createManager.php">Create Manager</a></p>
     </body>
 </html>

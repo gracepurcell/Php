@@ -18,12 +18,16 @@ $statement = $gateway->getEvent();
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
-        <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <title>Prestige Parties</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<link href='css/font-awesome.css' rel='stylesheet' type='text/css'>
     </head>
     <body>
+        
+        <div class="container-fluid">
         <?php require 'toolbar.php' ?>
         <?php 
         if (isset($message)) {
@@ -31,7 +35,13 @@ $statement = $gateway->getEvent();
         }
         ?>
         
-        <h1>Prestige Parties</h1>
+        <div class="row">
+            <div class="col-md-12">
+		<div class="hero-unit"><div class="herologo col-md-6 col-md-offset-3"></div>
+            </div>
+	</div>
+				
+		</div>
         
         <table>
             <thead>
@@ -65,5 +75,6 @@ $statement = $gateway->getEvent();
                 ?>
             </tbody>
         </table>
+        </div>
     </body>
 </html>
