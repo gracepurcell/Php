@@ -4,17 +4,22 @@ if ($session_id == "") {
     session_start();
 }
 if (isset($_SESSION['username'])) {
-    echo '<div class="navbar col-md-6 col-md-offset-1">';
-    echo '<ul class="nav nav-pills nav-justified">';
-    echo '<li role="presentation"><a href="index.php" data-hover="HOME">HOME</a></li>';
-    echo '<li role="presentation"><a href="AllEvents.php" data-hover="EVENTS">EVENTS</a></li>';	
-    echo '<li role="presentation"><a href="AllManagers.php" data-hover="MANAGERS">MANAGERS</a></li>';
-    echo '<li role="presentation"><a href="AllLocations.php" data-hover="LOCATIONS">LOCATIONS</a></li>' ;
-    echo '<li role="presentation"><a href="AllLocationM.php" data-hover="LOCATION MANAGERS">LOCATION MANAGERS</a></li>';
-    echo '<li role="presentation"><a href="Contact.html" data-hover="CONTACT">CONTACT</a></li>';
-    echo '<li role="presentation"><a href="index.php" data-hover="ABOUT US">ABOUT US</a></li>';
-    echo '</ul>';
-    echo '</div>';
+?>
+    <div>
+        <ul>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="AllEvents.php">EVENTS</a></li>	
+            <li><a href="AllManagers.php">MANAGERS</a></li>
+            <li><a href="AllLocations.php">LOCATIONS</a></li>
+            <li><a href="AllLocationM.php">LOCATION MANAGERS</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+            <li><a href="index.php">ABOUT US</a></li>
+         </ul>
+    </div>
+    <div>
+        <a href="logout.php">Logout</a>
+    </div>
+<?php
 }
 
     

@@ -8,7 +8,7 @@ class EventTableGateway {
         $this->connection = $c;
     }
 
-    public function getEvent() {
+    public function getEvents() {
         // execute a query to get all programmers
         $sqlQuery = "SELECT e.*, em.name AS managerName 
                      FROM event e
@@ -16,6 +16,26 @@ class EventTableGateway {
 
         $statement = $this->connection->prepare($sqlQuery);
         $status = $statement->execute();
+
+        if (!$status) {
+            die("Could not retrieve users");
+        }
+
+        return $statement;
+    }
+    
+    public function getEventsByManagerId($managerId) {
+        // execute a query to get all programmers
+        $sqlQuery = "SELECT e.*, em.name AS managerName 
+                     FROM event e
+                     LEFT JOIN eventmanager em ON em.id = e.eventmanager
+                     WHERE e.manager_id = :managerId ";
+
+        $params = array(
+            'managerId' => $managerId
+        );
+        $statement = $this->connection->prepare($sqlQuery);
+        $status = $statement->execute($params);
 
         if (!$status) {
             die("Could not retrieve users");

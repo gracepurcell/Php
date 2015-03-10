@@ -8,36 +8,18 @@ class ManagerTableGateway {
         $this->connection = $c;
     }
     
-    public function getManager(){
+    public function getManagers(){
         //execute a query to get all managers 
         $sqlQuery = "SELECT * FROM eventmanager";
         
-        $statement = $this->connection->prepare($sqlQuery);
-        $status = $statement->execute();
+        $statementManager = $this->connection->prepare($sqlQuery);
+        $status = $statementManager->execute();
         
         if (!$status) {
             die("Could not retrieve managers");
         }
         
-        return $statement; 
-    }
-    
-    public function getManagerById($id) {
-        //execute a query to get the manager specified by the id 
-        $sqlQuery = "SELECT * FROM eventmanager WHERE ID = :id";
-        
-        $statement = $this->connection->prepare($sqlQuery);
-        $params = array(
-            "id" => $id
-        );
-        
-        $status = $statement->execute($params);
-                
-        if (!$status) {
-            die("Could not retrieve user");
-        }
-
-        return $statement;
+        return $statementManager; 
     }
     
     public function insertManager($n, $p) {
@@ -45,13 +27,13 @@ class ManagerTableGateway {
                 "(name, phone) " .
                 "VALUES (:name, :phone)";
 
-        $statement = $this->connection->prepare($sqlQuery);
+        $statementManager = $this->connection->prepare($sqlQuery);
         $params = array(
             "name" => $n,
             "phone" => $p
         );
 
-        $status = $statement->execute($params);
+        $status = $statementManager->execute($params);
 
         if (!$status) {
             die("Could not insert manager");
@@ -65,18 +47,18 @@ class ManagerTableGateway {
     public function deleteManager($id) {
         $sqlQuery = "DELETE FROM eventmanager WHERE ID = :id";
 
-        $statement = $this->connection->prepare($sqlQuery);
+        $statementManager = $this->connection->prepare($sqlQuery);
         $params = array(
             "id" => $id
         );
 
-        $status = $statement->execute($params);
+        $status = $statementManager->execute($params);
 
         if (!$status) {
             die("Could not delete manager");
         }
 
-        return ($statement->rowCount() == 1);
+        return ($statementManager->rowCount() == 1);
     }
 
     public function updateManager($id, $n, $p) {
@@ -86,16 +68,32 @@ class ManagerTableGateway {
                 "phone = :phone " .
                 "WHERE ID = :id ";
 
-        $statement = $this->connection->prepare($sqlQuery);
+        $statementManager = $this->connection->prepare($sqlQuery);
         $params = array(
             "id" => $id,
             "name" => $n,
             "phone" => $p
         );
 
-        $status = $statement->execute($params);
+        $status = $statementManager->execute($params);
 
-        return ($statement->rowCount() == 1);
+        return ($statementManager->rowCount() == 1);
     }
-    
+
+    public function getManagerById($id) {
+        //execute a query to get the manager specified by the id 
+        $sqlQuery = "SELECT * FROM eventmanager WHERE ID = :id";
+        
+        $managers = $this->connection->prepare($sqlQuery);
+        $params = array("id" => $id);
+        
+        $status = $managers->execute($params);
+                
+        if (!$status) {
+            die("Could not retrieve user");
+        }
+
+        return $managers;
+    }
+
 }
