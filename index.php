@@ -12,7 +12,7 @@ if ($id == "") {
 $connection = Connection::getInstance();
 $gateway = new EventTableGateway($connection);
 
-$statement = $gateway->getEvent();
+$statement = $gateway->getEvents();
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,54 +27,100 @@ $statement = $gateway->getEvent();
     </head>
     <body>
         
-        <div class="container-fluid">
-        <?php require 'toolbar.php' ?>
-        <?php 
-        if (isset($message)) {
-            echo '<p>'.$message.'</p>';
-        }
-        ?>
-        
-        <div class="row">
-            <div class="col-md-12">
-		<div class="hero-unit"><div class="herologo col-md-6 col-md-offset-3"></div>
-            </div>
-	</div>
+        <nav class="navbar navbar-default">
+            <div class = "container 1">
+		<div class="row">
+                    <div class="col-md-2 col-xs-6 logo">
+			<a href="index.html"><img src="images/logo.png" class="img-responsive"></a>
+                    </div>
+                    <!--<div class="navbtns col-md-6 col-md-offset-2 col-xs-6">
+                            <button type="button"><a href="index.html">HOME</a></button>
+                            <button type="button"><a href="events.html">EVENTS</a></button>
+                            <button type="button"><a href="locations.html">LOCATIONS</a></button>
+                            <button type="button"><a href="managers.html">MANAGERS</a></button>
+                            <button type="button"><a href="resources.html">RESOURCES</a></button>
+			</div>-->
 				
+				
+                    <div class="toolbar  col-md-offset-8 col-md-2 ">
+			<button class="hidden-lg hidden-md hamburger col-sm-offset-5 col-sm-1 col-xs-offset-5 col-xs-1" type="button" ><a href="login.html"><i class="fa fa-bars"></i></a></button>
+					
+			<button class="hidden-sm hidden-xs login" type="button" ><a href="login.php">SIGN IN</a></button>
+				
+			<button class="hidden-sm hidden-xs register" type="button" ><a href="login.php">REGISTER</a></button>
+                    </div>
 		</div>
+            </div>
+	</nav>
         
-        <table>
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>Title</th>
-                    <th>Attending</th>
-                    <th>Address</th>
-                    <th>Event Manager</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                $row = $statement->fetch(PDO::FETCH_ASSOC);
-                while ($row) {
+    <header>
+        <img src="images/hero.jpg" class="hero-unit img-responsive">
+            <div class="container 2">
 
-                    
-                    echo '<td>' . $row['date'] . '</td>';
-                    echo '<td>' . $row['time'] . '</td>';
-                    echo '<td>' . $row['title'] . '</td>';
-                    echo '<td>' . $row['attending'] . '</td>';
-                    echo '<td>' . $row['address'] . '</td>';
-                    echo '<td>' . $row['eventManager'] . '</td>';
-                    echo '<td>' . $row['price'] . '</td>';
-                    echo '</tr>';
-                    
-                    $row = $statement->fetch(PDO::FETCH_ASSOC);
-                }
-                ?>
-            </tbody>
-        </table>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class=" img-responsive">
+                            <div class="col-lg-12 ">
+                                <p class="head">PRESTIGE PARTIES</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+<!--  - - - - - - - - - - -  - - - - - - - - - - - - - -NEXT PAGE - - - - - - - - - - - - - - - - - - - - - - - - - - - -->		
+
+    <section id="background">
+        <div class="container three">
+
+            <div class="row three">
+                <div class="content col-sm-8 col-sm-offset-1 col-md-3 ">
+                    <h2>How can we help you have a good time?</h2>
+                    <p class="sub">Lorem Ipsum is simply dummy text of the printing.</p>
+                    <p class="cont">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard  </p>
+                    <button type="button" class="btn">How</button>
+                </div>
+
+                <div class="hidden-sm hidden-xs contentimg img-responsive col-md-8">
+                <img src="images/about1.jpg" class="img-responsive img-rounded">
+                </div>
+            </div>
         </div>
-    </body>
+    </section>		
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - -  -SECTION - - - - - - - - - - - - - - - - -  -->		
+
+
+
+<!--  - - - - - - - - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+				
+    <section id="backgroundf2">	
+        <div class="container">	
+            <div class="foot col-md-12">
+                <div class="col-md-2 col-md-offset-1 ">
+                    <nav class="footnav">
+                        <a href="/html/">terms & conditions</a>
+                        <a href="/css/">return policy</a>
+                        <a href="/js/">reviews</a>
+                        <a href="/jquery/">about shop</a>
+                        <a href="/jquery/">securepayment</a>  
+                    </nav>
+                </div>
+
+                <i class="fa fa-cc-paypal fa-3x iconcolor"></i>
+                <i class="fa fa-cc-visa fa-3x iconcolor"></i>
+                <i class="fa fa-cc-mastercard fa-3x iconcolor"></i>
+                <i class="fa fa-cc-amex fa-3x iconcolor"></i>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+</body>
 </html>

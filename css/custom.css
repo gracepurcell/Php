@@ -1,0 +1,453 @@
+.navbar{
+	margin-bottom:0px;
+}
+
+.navbar-default {
+	background-color: #3c3c3c;
+	border-color: #3c3c3c;
+	border-radius: 0px;
+}
+
+.navbar-collapse{
+
+}
+
+.list-inline{
+	display: inline;
+	margin-right: 10px;
+}
+
+.navbtns a{
+	text-align:right;
+	font-family: 'Quicksand', sans-serif;
+	color: #111;
+	padding: 9px;
+	background-color: #3c3c3c;
+	margin-top: 5px;
+	border: none;
+	text-decoration: none;
+}
+
+.navbtns a:hover{
+	color:#fff;
+}
+
+.navbtns button{
+	font-family: 'Quicksand', sans-serif;
+	color: #111;
+	padding: 9px;
+	background-color: #3c3c3c;
+	margin-top: 5px;
+	border: none;
+}
+
+.navbtns button:hover{
+	color:#fff;
+}
+
+.hero-unit{
+	background-size:cover;
+}
+
+
+.herologo{
+margin-top: -400px;
+  display: block;
+  margin-left: 550px;
+  position: absolute;
+}
+
+header{
+background-color:#321f36;
+}
+
+.head {
+	font-family: Palatino Linotype;
+	font-size: 70px;
+	color: #fff;
+	background-color: #321f36;
+	opacity: 1;
+	text-align: center;
+}
+
+.logo {
+	margin-top: 7px;
+}
+
+.img-responsive{
+	max-width: 100%;
+	height:auto;
+	display:block;
+}
+
+.toolbar button{
+	font-weight: bold;
+	font-family: 'Quicksand', sans-serif;
+	border: none;
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+.hamburger{
+    background-color: transparent;
+    color:#fff;
+    margin-top: 0px;
+}
+
+.Login-Register input{
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.Login-Register h1{
+    font-family: Palatino Linotype;
+    color: #fff;
+}
+
+.Login-Register.table{
+    background-color: transparent;
+}    
+
+.login{
+	background-color:#f5f1ed;
+	color: #1c0721;
+}
+
+.login a{
+	color:#1c0721;
+	text-decoration: none;
+}
+
+.login:hover{
+	background-color:#1c0721;
+	color:#f5f1ed;
+}
+
+.login a:hover{
+	color:#f5f1ed;
+}
+
+.register a{
+	text-decoration: none;
+	color: #f5f1ed ;
+}
+
+.register{
+	background-color: #1c0721;
+	color:#f5f1ed ;
+}
+
+.register:hover{
+	background-color:#f5f1ed;
+	color:#1c0721;
+}
+
+.register a:hover{
+	color:#1c0721;
+}
+
+.backimg img{
+	width: 1640px;
+	height: 733px;
+}
+
+.backimglogo{
+	margin-left: 412px;
+	margin-top: -450px;
+}
+
+h1, h2{
+	font-family: 'Quicksand', sans-serif;
+	color: #321f36;
+}
+
+h2{
+	font-size: 36px;
+	padding-top: 30px;
+
+}
+	
+h1{
+	font-size: 60px;
+	text-align: center;
+	margin-top: 60px;
+}	
+ 
+p{
+ 	font-family:'Quicksand', sans-serif;
+ 	color:#f5f1ed;
+}
+
+//-----------------  aboutContent   -------------------
+
+section{
+	background-color:#ccc;
+}
+
+
+ 
+.cont{
+ 	font-size: 16px;
+ 	padding-top: 30px;
+	color:#333;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.sub{
+ 	font-size: 20px;
+ 	padding-top: 30px;
+}
+
+.content{
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.contentimg img{
+	background-position: center center;
+	height: 700px;
+	margin-top: 160px;
+	width: 780px;
+}
+
+.loginbtn{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #321f36;
+    color: #fff;
+    width: 100%;
+    height: 85px;
+    font-size: 36px;
+    text-align: start;
+    margin-top: 40px;
+}
+
+.btn{
+	font-family: 'Quicksand', sans-serif;
+	background-color: #321f36;
+	color: #fff;
+	width: 100%;
+	height: 85px;
+	font-size: 36px;
+	text-align: start;
+	margin-top: 40px;
+	}
+
+<!--          Footer          -->
+
+.footbot{
+	background-color:#321f36;
+	height:300px;
+	padding-top: 150px;
+}
+
+.footnav a{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.footbot img{
+	padding-right: 23px;
+	padding-top: 10px;
+}
+
+.footbot a{
+	padding-right: 0px;
+	color: #000;
+	font-family: Myriad Pro;
+	text-transform: lowercase;
+	font-size: 14px;
+	font-weight: normal;
+	display: table-footer-group;
+	line-height: 20px;
+}
+
+.foottop{
+	height: 506px;
+
+}
+
+.paypal{
+	margin-left: 57px;
+}
+
+.search{
+	height: 300px;
+	border-radius: 32px;
+	margin-top: 100px;
+	width: 100%;
+	padding-left:85px;
+	border-color:#321f36;
+	color:#321f36;
+}
+
+#iconified {
+	font-family: FontAwesome;
+	font-size:4em;
+	color:#321f36;
+}
+
+.iconcolor{
+	color:#fff;
+}
+
+.foot{
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+#background {
+	background-color: #CCC;
+}
+
+#backgroundf1{
+	background-color: #fff;
+}
+
+#backgroundf2{
+	background-color:#321f36;
+}
+
+.signIn{
+	margin-top: 150px;
+	padding: 40px;
+}
+
+.signIn .field{
+	height:80px;
+	margin-bottom: 57px;
+}
+
+.signIn h1{
+	font-family:Georgia;
+	text-align:left;
+	margin-top: 10px;
+	color: #4F4F4F;
+}
+
+.signIn button{
+	height:60px;
+	margin-top: -41px;
+  	margin-left: 46px;
+  	width: 72%;
+}
+
+.facebook{
+	color:#fff;
+	margin-top: 40px;
+}
+
+.facebook:hover{
+	color:#3b5998;
+}
+
+.field{
+	height:60px;
+	margin-bottom: 20px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+}
+.Register{
+	margin-top: 150px;
+	padding: 40px;
+}
+
+.Register h1{
+	text-align:left;
+	font-family:Georgia;
+	margin-top: 10px;
+	color: #101010;
+}
+
+.Register button{
+	height:60px;
+	margin-top: 0px;
+  	margin-left: 0px;
+  	width: 100%;
+}
+
+.table{
+	margin-top: 50px;
+  	font-family: Quicksand;
+  	font-size: 17px;
+  	background-color: transparent;
+}
+
+.options{
+	color: #fff;
+}
+
+#table1{
+	background-color: #CCC;
+}
+
+.etable{
+	padding-bottom: 150px;
+	background-color: #fff;
+}
+
+.tcontent{
+	margin-top: 100px;
+  	font-size: 17px;
+ 	background-color: #fff;
+}
+
+.tcontent p{
+	color:#333;
+
+}
+
+.eventhead{
+	background-image:url(../images/concert.jpg);
+	height: 550px;
+}
+
+.circle{
+	padding:20px;
+	margin-top: 50px;
+	margin-left: 50px;
+	}
+
+#profile img{
+  background-position: center center;
+  width: 100%;
+  position: absolute;
+}
+
+.heading p{
+  font-size: 110PX;
+  color: #fff;
+  margin-top: 170px;
+}
+
+.aboutUs{
+    margin-top: 10px;
+}
+
+.profilepage{
+    margin-top: 250px;
+}
+.profilepic{
+    background-position: center center;
+}
+
+.profilepage p{
+    font-family: 'Quicksand', sans-serif;
+    color: #FD898E;
+    font-size: 20px;
+}
+
+.profilepage .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color:#fdd6d8; 
+}
+.profiletable{
+    margin-top:50px;
+}
+.eventpage table{
+    margin-top: 30px;
+}
+.eventpage{
+    padding-top:150px;
+    padding-bottom: 150px;
+}
