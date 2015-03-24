@@ -3,7 +3,8 @@
 }
 
 .navbar-default {
-	background-color: #3c3c3c;
+        background-image:url(../images/navbackground.svg); 
+	background-color: #545454;
 	border-color: #3c3c3c;
 	border-radius: 0px;
 }
@@ -20,29 +21,30 @@
 .navbtns a{
 	text-align:right;
 	font-family: 'Quicksand', sans-serif;
-	color: #111;
+	color: #fff;
 	padding: 9px;
-	background-color: #3c3c3c;
+	background-color: transparent;
 	margin-top: 5px;
 	border: none;
 	text-decoration: none;
 }
 
 .navbtns a:hover{
-	color:#fff;
+	color:#000;
 }
 
 .navbtns button{
 	font-family: 'Quicksand', sans-serif;
-	color: #111;
+	color: #fff;
 	padding: 9px;
-	background-color: #3c3c3c;
+	background-color: transparent;
 	margin-top: 5px;
 	border: none;
+        border-radius:1px;
 }
 
 .navbtns button:hover{
-	color:#fff;
+	color:#000;
 }
 
 .hero-unit{
@@ -205,10 +207,10 @@ section{
 }
 
 .contentimg img{
-	background-position: center center;
-	height: 700px;
-	margin-top: 160px;
-	width: 780px;
+    background-position: center center;
+    height: 620px;
+    margin-top: 230px;
+    width: 780px;
 }
 
 .loginbtn{
@@ -242,8 +244,16 @@ section{
 }
 
 .footnav a{
-	color: #fff;
-	text-decoration: none;
+color: #fff;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  padding-bottom: 7px;
+}
+
+foot button{
+    display:block;
+    background-color:transparent;
 }
 
 
@@ -270,6 +280,14 @@ section{
 
 .paypal{
 	margin-left: 57px;
+}
+
+.payment i{
+      padding: 10px;
+}
+
+.diamond{
+    padding-right: 5px;
 }
 
 .search{
@@ -306,7 +324,8 @@ section{
 }
 
 #backgroundf2{
-	background-color:#321f36;
+    background-image: url(../images/BackgroundSVG.svg);
+    background-color: #321f36;
 }
 
 .signIn{
@@ -427,6 +446,7 @@ section{
 
 .profilepage{
     margin-top: 250px;
+    margin-bottom:150px;
 }
 .profilepic{
     background-position: center center;
@@ -434,15 +454,12 @@ section{
 
 .profilepage p{
     font-family: 'Quicksand', sans-serif;
-    color: #FD898E;
+    color: #55345C;
     font-size: 20px;
 }
 
-.profilepage .table-striped > tbody > tr:nth-of-type(odd) {
-    background-color:#fdd6d8; 
-}
 .profiletable{
-    margin-top:50px;
+    margin-top:500px;
 }
 .eventpage table{
     margin-top: 30px;
@@ -450,4 +467,16 @@ section{
 .eventpage{
     padding-top:150px;
     padding-bottom: 150px;
+}
+
+.create{
+    background-color: #DBD7DB;
+    padding: 5px;
+    color: #000;
+    border-radius: 4px;
+}
+
+.create a{
+     text-decoration: none;
+  color: #000;
 }

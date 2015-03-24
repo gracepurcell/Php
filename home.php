@@ -27,10 +27,10 @@ $statement = $gateway->getEvents();
             <div class = "container 1">
 		<div class="row">
                     <div class="col-md-2 col-xs-6 logo">
-			<a href="index.html"><img src="images/logo.png" class="img-responsive"></a>
+			<a href="index.php"><img src="images/logo.png" class="img-responsive"></a>
                     </div>
                     <div class="navbtns col-md-6 col-md-offset-2 col-xs-6">
-                            <button type="button"><a href="index.html">HOME</a></button>
+                            <button type="button"><a href="home.php">HOME</a></button>
                             <button type="button"><a href="AllEvents.php">EVENTS</a></button>
                             <button type="button"><a href="locations.html">LOCATIONS</a></button>
                             <button type="button"><a href="managers.html">MANAGERS</a></button>
@@ -38,7 +38,7 @@ $statement = $gateway->getEvents();
                     </div>
 				
 				
-                    <div class="toolbar  col-md-offset-8 col-md-2 ">
+                    <div class="toolbar   col-md-2 ">
 			<button class="hidden-lg hidden-md hamburger col-sm-offset-5 col-sm-1 col-xs-offset-5 col-xs-1" type="button" ><a href="logout.php"><i class="fa fa-bars"></i></a></button>
 					
 			<!--<button class="hidden-sm hidden-xs login" type="button" ><a href="login.php">SIGN IN</a></button>-->
@@ -116,10 +116,38 @@ $statement = $gateway->getEvents();
                 }
                 ?>
             </tbody>
+             
         </table>
-        <p><a href="createEventForm.php">Create Event</a></p>        
+            <div class="create col-md-2">
+                <p>
+                    <a href="createEventForm.php">Create Event <i class="fa fa-plus"></i></a>
+                </p>
+            </div>
         
         
         </div>
+        
+        <section id="backgroundf2">	
+        <div class="container">	
+            <div class="foot col-md-12">
+                <div class="col-md-3  ">
+                    <nav class="footnav">
+                        <a href="/html/"><i class="diamond fa fa-diamond"></i>  terms & conditions</a>
+                        <a href="/css/"><i class="diamond fa fa-diamond"></i>  return policy</a>
+                        <a href="/js/"><i class="diamond fa fa-diamond"></i>  reviews</a>
+                        <a href="/jquery/"><i class="diamond fa fa-diamond"></i>  about shop</a>
+                        <a href="/jquery/"><i class="diamond fa fa-diamond"></i>  securepayment</a>  
+                    </nav>
+                </div>
+                <div class="payment col-md-2">
+                    <i class="fa fa-cc-paypal fa-2x iconcolor"></i>
+                    <i class="fa fa-cc-visa fa-2x iconcolor"></i>
+                    <i class="fa fa-cc-mastercard fa-2x iconcolor"></i>
+                    <i class="fa fa-cc-amex fa-2x iconcolor"></i>
+                </div>
+                
+            </div>
+        </div>
+    </section>
     </body>
 </html>

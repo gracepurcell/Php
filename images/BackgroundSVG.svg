@@ -1,0 +1,53 @@
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='495' height='201' viewBox='0 0 99 40.2'>
+	<defs>
+		<path id='s' fill='#55345c' d='M0,0l8 3.1l-8,3.1z'/>
+	</defs>
+	<g id='b'>
+	<use x='-8' y='-3.1' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.502' xlink:href='#s' />
+	<use x='0' y='0.25' fill-opacity='0.753' xlink:href='#s' />
+	<use x='-8' y='3.6' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.753' xlink:href='#s' />
+	<use x='0' y='6.95' fill-opacity='0.753' xlink:href='#s' />
+	<use x='-8' y='10.3' transform='matrix(-1 0 0 1 0 0)' fill-opacity='1.004' xlink:href='#s' />
+	<use x='0' y='13.65' fill-opacity='0.502' xlink:href='#s' />
+	<use x='-8' y='17' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.502' xlink:href='#s' />
+	<use x='8.25' y='-3.1' fill-opacity='0.753' xlink:href='#s' />
+	<use x='-16.25' y='0.25' transform='matrix(-1 0 0 1 0 0)' fill-opacity='1.004' xlink:href='#s' />
+	<use x='8.25' y='3.6' fill-opacity='0.753' xlink:href='#s' />
+	<use x='-16.25' y='6.95' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.502' xlink:href='#s' />
+	<use x='8.25' y='10.3' fill-opacity='0.251' xlink:href='#s' />
+	<use x='-16.25' y='13.65' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.502' xlink:href='#s' />
+	<use x='8.25' y='17' fill-opacity='0.753' xlink:href='#s' />
+	<use x='-24.5' y='-3.1' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.502' xlink:href='#s' />
+	<use x='16.5' y='0.25' fill-opacity='0.502' xlink:href='#s' />
+	<use x='-24.5' y='3.6' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.753' xlink:href='#s' />
+	<use x='16.5' y='6.95' fill-opacity='0.502' xlink:href='#s' />
+	<use x='-24.5' y='10.3' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.251' xlink:href='#s' />	
+	<use x='16.5' y='13.65' fill-opacity='0.502' xlink:href='#s' />
+	<use x='-24.5' y='17' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.502' xlink:href='#s' />
+	<use x='24.75' y='-3.1' fill-opacity='0.502' xlink:href='#s' />
+	<use x='-32.75' y='0.25' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.502' xlink:href='#s' />
+	<use x='24.75' y='3.6' fill-opacity='0.251' xlink:href='#s' />
+	<use x='-32.75' y='6.95' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.753' xlink:href='#s' />
+	<use x='24.75' y='10.3' fill-opacity='0.753' xlink:href='#s' />
+	<use x='-32.75' y='13.65' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.251' xlink:href='#s' />
+	<use x='24.75' y='17' fill-opacity='0.502' xlink:href='#s' />
+	<use x='-41' y='-3.1' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.753' xlink:href='#s' />	
+	<use x='33' y='0.25' fill-opacity='1.004' xlink:href='#s' />
+	<use x='-41' y='3.6' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.251' xlink:href='#s' />
+	<use x='33' y='6.95' fill-opacity='0.502' xlink:href='#s' />
+	<use x='-41' y='10.3' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.753' xlink:href='#s' />
+	<use x='33' y='13.65' fill-opacity='0.251' xlink:href='#s' />
+	<use x='-41' y='17' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.753' xlink:href='#s' />
+	<use x='41.25' y='-3.1' fill-opacity='0.502' xlink:href='#s' />
+	<use x='-49.25' y='0.25' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.502' xlink:href='#s' />	
+	<use x='41.25' y='3.6' fill-opacity='1.004' xlink:href='#s' />
+	<use x='-49.25' y='6.95' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.502' xlink:href='#s' />	
+	<use x='41.25' y='10.3' fill-opacity='0.753' xlink:href='#s' />
+	<use x='-49.25' y='13.65' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.502' xlink:href='#s' />
+	<use x='41.25' y='17' fill-opacity='0.502' xlink:href='#s' />
+	</g>
+	<use x='-49.25' y='20.1' transform='matrix(-1 0 0 1 0 0)' xlink:href='#b' />
+	<use x='-98.75' y='-13.4' transform='matrix(-1 0 0 -1 0 0)' xlink:href='#b' />
+	<use x='49.5' y='-26.8' transform='matrix(1 0 0 -1 0 0)' xlink:href='#b' />
+	<use x='49.5' y='-46.9' transform='matrix(1 0 0 -1 0 0)' xlink:href='#b' />
+</svg>

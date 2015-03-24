@@ -16,7 +16,7 @@
             <div class = "container 1">
 		<div class="row">
                     <div class="col-md-2 col-xs-6 logo">
-			<a href="index.html"><img src="images/logo.png" class="img-responsive"></a>
+			<a href="index.php"><img src="images/logo.png" class="img-responsive"></a>
                     </div>
                     <!--<div class="navbtns col-md-6 col-md-offset-2 col-xs-6">
                             <button type="button"><a href="index.html">HOME</a></button>
@@ -183,20 +183,22 @@
         <section id="backgroundf2">	
         <div class="container">	
             <div class="foot col-md-12">
-                <div class="col-md-2 col-md-offset-1 ">
+                <div class="col-md-3  ">
                     <nav class="footnav">
-                        <a href="/html/">terms & conditions</a>
-                        <a href="/css/">return policy</a>
-                        <a href="/js/">reviews</a>
-                        <a href="/jquery/">about shop</a>
-                        <a href="/jquery/">securepayment</a>  
+                        <a href="/html/"><i class="diamond fa fa-diamond"></i>  terms & conditions</a>
+                        <a href="/css/"><i class="diamond fa fa-diamond"></i>  return policy</a>
+                        <a href="/js/"><i class="diamond fa fa-diamond"></i>  reviews</a>
+                        <a href="/jquery/"><i class="diamond fa fa-diamond"></i>  about shop</a>
+                        <a href="/jquery/"><i class="diamond fa fa-diamond"></i>  securepayment</a>  
                     </nav>
                 </div>
-
-                <i class="fa fa-cc-paypal fa-3x iconcolor"></i>
-                <i class="fa fa-cc-visa fa-3x iconcolor"></i>
-                <i class="fa fa-cc-mastercard fa-3x iconcolor"></i>
-                <i class="fa fa-cc-amex fa-3x iconcolor"></i>
+                <div class="payment col-md-2">
+                    <i class="fa fa-cc-paypal fa-2x iconcolor"></i>
+                    <i class="fa fa-cc-visa fa-2x iconcolor"></i>
+                    <i class="fa fa-cc-mastercard fa-2x iconcolor"></i>
+                    <i class="fa fa-cc-amex fa-2x iconcolor"></i>
+                </div>
+                
             </div>
         </div>
     </section>
