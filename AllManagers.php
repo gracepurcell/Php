@@ -10,7 +10,7 @@ $managerGateway = new ManagerTableGateway($connection);
 $gateway = new EventTableGateway($connection);
 
 $managers = $managerGateway->getManagers();
-$statement = $gateway->getEventsByManagerId($id);
+
 ?>
 <!DOCTYPE html>
 
@@ -54,7 +54,7 @@ $statement = $gateway->getEventsByManagerId($id);
         
         
        
-       <!-- <h2>Manager Table</h2>
+       <h2>Manager Table</h2>
         <table>
             <thead>
                 <tr>
@@ -89,49 +89,5 @@ $statement = $gateway->getEventsByManagerId($id);
         </table>
         <p><a href="createManager.php">Create Manager</a></p>
         
-        <h2></h2>
-        <?php if (!empty($events)) { ?>
-        <table>
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>Title</th>
-                    <th>Attending</th>
-                    <th>Address</th>
-                    <th>Price</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-                <?php
-                $row = $statement->fetch(PDO::FETCH_ASSOC);
-                while ($row) {
-
-
-                    echo '<td>' . $row['date'] . '</td>';
-                    echo '<td>' . $row['time'] . '</td>';
-                    echo '<td>' . $row['title'] . '</td>';
-                    echo '<td>' . $row['attending'] . '</td>';
-                    echo '<td>' . $row['address'] . '</td>';
-                    echo '<td>' . $row['price'] . '</td>';
-                    echo '<td>'
-                    . '<a class="actions" href="viewEvent.php?id='.$row['id'].'">View</a> '
-                    . '<a class="actions" href="editEventForm.php?id='.$row['id'].'">Edit</a> '
-                    . '<a class="actions" href="deleteEvent.php?id='.$row['id'].'">Delete</a> '
-                    . '</td>';
-                    echo '</tr>';
-
-                    $row = $statement->fetch(PDO::FETCH_ASSOC);
-                }
-                ?>
-            </tbody>
-        </table>
-        <?php } else {?>
-        
-        <p>There are no programmers assigned to this manager </p>
-        
-        <?php } ?>
     </body>
 </html>

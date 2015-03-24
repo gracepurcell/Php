@@ -33,7 +33,7 @@ $statement = $gateway->getEvents();
                             <button type="button"><a href="home.php">HOME</a></button>
                             <button type="button"><a href="AllEvents.php">EVENTS</a></button>
                             <button type="button"><a href="locations.html">LOCATIONS</a></button>
-                            <button type="button"><a href="managers.html">MANAGERS</a></button>
+                            <button type="button"><a href="AllManagers.php">MANAGERS</a></button>
                             <button type="button"><a href="resources.html">RESOURCES</a></button>
                     </div>
 				

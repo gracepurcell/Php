@@ -96,6 +96,11 @@ background-color:#321f36;
     margin-top: 0px;
 }
 
+.Login-Register{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
 .Login-Register input{
     margin-top: 10px;
     padding: 20px;
@@ -479,4 +484,20 @@ foot button{
 .create a{
      text-decoration: none;
   color: #000;
+}
+
+.viewEventHead{
+      background-color: #313131;
+  height: 400px;
+  font-size: 100px;
+}
+
+.headicons{
+    margin-left: 360px;
+    margin-top: 120px;
+}
+
+.moreDetails{
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
