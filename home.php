@@ -88,9 +88,12 @@ $statement = $gateway->getEvents();
         <table class="profiletable table table-striped">
             <thead>
                 <tr>
-                    <th>Title</th>
                     <th>Date</th>
+                    <th>Time</th>
+                    <th>Title</th>
+                    <th>Attending</th>
                     <th>Address</th>
+                    <th>Event Manager</th>
                     <th>Price</th>
                     <th>Actions</th>
                 </tr>
@@ -100,10 +103,12 @@ $statement = $gateway->getEvents();
                 $row = $statement->fetch(PDO::FETCH_ASSOC);
                 while ($row) {
 
-
-                    echo '<td>' . $row['title'] . '</td>';
                     echo '<td>' . $row['date'] . '</td>';
+                    echo '<td>' . $row['time'] . '</td>';
+                    echo '<td>' . $row['title'] . '</td>';
+                    echo '<td>' . $row['attending'] . '</td>';
                     echo '<td>' . $row['address'] . '</td>';
+                    echo '<td>' . $row['eventManager'] . '</td>';
                     echo '<td>' . $row['price'] . '</td>';
                     echo '<td>'
                     . '<a href="viewEvent.php?id='.$row['id'].'"><i class="fa fa-plus"></i></a> '

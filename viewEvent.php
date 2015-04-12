@@ -10,12 +10,17 @@ if ($id == "") {
 
 require 'ensureUserLoggedIn.php';
 
-
+if (!isset($_GET) || !isset($_GET['id'])) {
+    die('Invalid request');
+}
+$id = $_GET['id'];
 
 $connection = Connection::getInstance();
 $gateway = new EventTableGateway($connection);
 
 $statement = $gateway->getEventById($id);
+
+$row = $statement->fetch(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>
@@ -75,38 +80,31 @@ $statement = $gateway->getEventById($id);
             <h1> More Details </h1>
             
             
-
+            <input type="hidden" name="id" value="<?php echo $id; ?>" />
             <table class="table table-striped ">
                 <tbody>
                    <?php 
                     $row = $statement->fetch(PDO::FETCH_ASSOC);
                         echo '<tr>';
-                        echo '<td class="view">Date</td>'
-                        . '<td>' . $row['date'] . '</td>';
+                        echo '<td class="view">Date</td>' . '<td>' . $row['date'] . '</td>';
                         echo '</tr>';
                         echo '<tr>';
-                        echo '<td class="view">Time</td>'
-                        . '<td>' . $row['time'] . '</td>';
+                        echo '<td class="view">Time</td>' . '<td>' . $row['time'] . '</td>';
                         echo '</tr>';
                         echo '<tr>';
-                        echo '<td class="view">Title</td>'
-                        . '<td>' . $row['title'] . '</td>';
+                        echo '<td class="view">Title</td>' . '<td>' . $row['title'] . '</td>';
                         echo '</tr>';
                         echo '<tr>';
-                        echo '<td class="view">Attending</td>'
-                        . '<td>' . $row['attending'] . '</td>';
+                        echo '<td class="view">Attending</td>' . '<td>' . $row['attending'] . '</td>';
                         echo '</tr>';
                         echo '<tr>';
-                        echo '<td class="view">Address</td>'
-                        . '<td>' . $row['address'] . '</td>';
+                        echo '<td class="view">Address</td>' . '<td>' . $row['address'] . '</td>';
                         echo '</tr>';
                         echo '<tr>';
-                        echo '<td class="view">Event Manager</td>'
-                        . '<td>' . $row['managerName'] . '</td>';
+                        echo '<td class="view">Event Manager</td>' . '<td>' . $row['managerName'] . '</td>';
                         echo '</tr>';
                         echo '<tr>';
-                        echo '<td class="view">Price</td>'
-                        . '<td>' . $row['price'] . '</td>';
+                        echo '<td class="view">Price</td>' . '<td>' . $row['price'] . '</td>';
                         echo '</tr>';
                     ?>
                 </tbody>

@@ -10,16 +10,17 @@ if ($id == "") {
 
 require 'ensureUserLoggedIn.php';
 
+if (!isset($_GET) || !isset($_GET['id'])) {
+    die('Invalid request');
+}
+$id = $_GET['id'];
+
 $connection = Connection::getInstance();
 $managerGateway = new ManagerTableGateway($connection);
 
+$managerGateway->deleteManager($id);
 
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$address = $_POST['address'];
-$email = $_POST['email'];
+header("Location: home.php");
+?>
 
 
-$id = $managerGateway->insertManager($name, $phone, $address, $email);
-
-header('Location: home.php');

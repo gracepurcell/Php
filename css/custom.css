@@ -440,7 +440,7 @@ foot button{
 }
 
 .heading p{
-  font-size: 110PX;
+  font-size: 90PX;
   color: #fff;
   margin-top: 170px;
 }
@@ -487,9 +487,15 @@ foot button{
 }
 
 .viewEventHead{
-      background-color: #313131;
+      background-color: #C3043E;
   height: 400px;
   font-size: 100px;
+}
+
+.CreateEventHead{
+    background-color: blue;
+    height: 400px;
+    font-size: 100px;
 }
 
 .headicons{
@@ -500,4 +506,26 @@ foot button{
 .moreDetails{
     margin-top: 150px;
     margin-bottom: 150px;
+}
+
+.editEvent{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.editEvent td {
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.editEvent input{
+  border: none;
+  width: 390px;
+  padding: 7px;
+  box-shadow: 10px 10px 0px #EFEFEF;
+}
+
+#editEventForm{
+    margin-top:100px ;
 }

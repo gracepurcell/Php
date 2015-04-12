@@ -12,28 +12,30 @@ class ManagerTableGateway {
         //execute a query to get all managers 
         $sqlQuery = "SELECT * FROM eventmanager";
         
-        $statementManager = $this->connection->prepare($sqlQuery);
-        $status = $statementManager->execute();
+        $manager = $this->connection->prepare($sqlQuery);
+        $status = $manager->execute();
         
         if (!$status) {
             die("Could not retrieve managers");
         }
         
-        return $statementManager; 
+        return $manager; 
     }
     
-    public function insertManager($n, $p) {
+    public function insertManager($n, $p, $ma, $ema) {
         $sqlQuery = "INSERT INTO eventManager " .
-                "(name, phone) " .
-                "VALUES (:name, :phone)";
+                "(Name, phone, address, email) " .
+                "VALUES (:Name, :phone, :address, :email)";
 
-        $statementManager = $this->connection->prepare($sqlQuery);
+        $managers = $this->connection->prepare($sqlQuery);
         $params = array(
-            "name" => $n,
-            "phone" => $p
+            "Name" => $n,
+            "phone" => $p,
+            "address" => $ma,
+            "email" => $ema
         );
 
-        $status = $statementManager->execute($params);
+        $status = $managers->execute($params);
 
         if (!$status) {
             die("Could not insert manager");
@@ -47,37 +49,41 @@ class ManagerTableGateway {
     public function deleteManager($id) {
         $sqlQuery = "DELETE FROM eventmanager WHERE ID = :id";
 
-        $statementManager = $this->connection->prepare($sqlQuery);
+        $managers = $this->connection->prepare($sqlQuery);
         $params = array(
             "id" => $id
         );
 
-        $status = $statementManager->execute($params);
+        $status = $managers->execute($params);
 
         if (!$status) {
             die("Could not delete manager");
         }
 
-        return ($statementManager->rowCount() == 1);
+        return ($managers->rowCount() == 1);
     }
 
-    public function updateManager($id, $n, $p) {
+    public function updateManager($id, $n, $p, $ma, $ema) {
         $sqlQuery =
                 "UPDATE eventmanager SET " .
-                "name = :name, " .
+                "Name = :Name, " .
                 "phone = :phone " .
+                "address = :address" .
+                "email = :email" .
                 "WHERE ID = :id ";
 
-        $statementManager = $this->connection->prepare($sqlQuery);
+        $manager = $this->connection->prepare($sqlQuery);
         $params = array(
-            "id" => $id,
-            "name" => $n,
-            "phone" => $p
+            "ID" => $id,
+            "Name" => $n,
+            "phone" => $p,
+            "address" => $ma,
+            "email" => $ema
         );
 
-        $status = $statementManager->execute($params);
+        $status = $manager->execute($params);
 
-        return ($statementManager->rowCount() == 1);
+        return ($manager->rowCount() == 1);
     }
 
     public function getManagerById($id) {

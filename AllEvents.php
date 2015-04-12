@@ -58,7 +58,6 @@ $statement = $gateway->getEvents();
             </div>
             
         </section>
-        <?php require 'toolbar.php' ?>
         
         
         <div class="container eventpage">

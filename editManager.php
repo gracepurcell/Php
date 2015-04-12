@@ -13,13 +13,19 @@ require 'ensureUserLoggedIn.php';
 $connection = Connection::getInstance();
 $managerGateway = new ManagerTableGateway($connection);
 
-
-$name = $_POST['name'];
+$id = $_POST['ID'];
+$name = $_POST['Name'];
 $phone = $_POST['phone'];
 $address = $_POST['address'];
 $email = $_POST['email'];
 
 
-$id = $managerGateway->insertManager($name, $phone, $address, $email);
+$managerGateway->updateManager($id, $name, $phone, $address, $email);
 
-header('Location: home.php');
+header('Location: AllManagers.php');
+
+
+
+
+
+
