@@ -12,14 +12,14 @@ class ManagerTableGateway {
         //execute a query to get all managers 
         $sqlQuery = "SELECT * FROM eventmanager";
         
-        $manager = $this->connection->prepare($sqlQuery);
-        $status = $manager->execute();
+        $managers = $this->connection->prepare($sqlQuery);
+        $status = $managers->execute();
         
         if (!$status) {
             die("Could not retrieve managers");
         }
         
-        return $manager; 
+        return $managers; 
     }
     
     public function insertManager($n, $p, $ma, $ema) {
@@ -27,7 +27,7 @@ class ManagerTableGateway {
                 "(Name, phone, address, email) " .
                 "VALUES (:Name, :phone, :address, :email)";
 
-        $managers = $this->connection->prepare($sqlQuery);
+        $manager = $this->connection->prepare($sqlQuery);
         $params = array(
             "Name" => $n,
             "phone" => $p,
@@ -35,7 +35,7 @@ class ManagerTableGateway {
             "email" => $ema
         );
 
-        $status = $managers->execute($params);
+        $status = $manager->execute($params);
 
         if (!$status) {
             die("Could not insert manager");
@@ -67,10 +67,10 @@ class ManagerTableGateway {
         $sqlQuery =
                 "UPDATE eventmanager SET " .
                 "Name = :Name, " .
-                "phone = :phone " .
-                "address = :address" .
-                "email = :email" .
-                "WHERE ID = :id ";
+                "phone = :phone, " .
+                "address = :address, " .
+                "email = :email " .
+                "WHERE ID = :ID ";
 
         $manager = $this->connection->prepare($sqlQuery);
         $params = array(
