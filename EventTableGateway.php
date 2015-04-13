@@ -26,10 +26,10 @@ class EventTableGateway {
     
     public function getEventsByManagerId($managerId) {
         // execute a query to get all programmers
-        $sqlQuery = "SELECT e.*, em.name AS managerName 
+        $sqlQuery = "SELECT e.*, em.Name AS eventManager 
                      FROM event e
-                     LEFT JOIN eventmanager em ON em.id = e.eventmanager
-                     WHERE e.manager_id = :managerId ";
+                     LEFT JOIN eventmanager em ON em.ID = e.eventManager
+                     WHERE e.eventManager = :ID ";
 
         $params = array(
             'managerId' => $managerId
